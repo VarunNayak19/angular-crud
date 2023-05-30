@@ -1,0 +1,11 @@
+<div *ngIf="hero" class="p-4 mb-6">
+    <h2 class="capitalize text-2xl font-semibold cursor-pointer duration-1000">{{hero.heroname | uppercase}}
+        Details</h2>
+    <div class="capitalize text-2xl font-semibold cursor-pointer duration-1000">
+        <span>id:</span>{{hero.id}}
+    </div>
+    <div>
+        <label>name:</label>
+        <input type="text" placeholder="name" class="outline-1 border-2" [(ngModel)]="hero.heroname">
+    </div>
+</div>
